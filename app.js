@@ -47,7 +47,7 @@ function run() {
 		async.each(config, function(item, callback) {
 			process(item, keys, vals);
 		}, function(err) {
-			console.log("over   ", err);
+			console.log("all over   ", err);
 		});
 	});
 
