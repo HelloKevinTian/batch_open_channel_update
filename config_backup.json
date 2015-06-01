@@ -166,4 +166,28 @@
 	"update": "1",
 	"force_update": "0",
 	"update_url": "http://apkegg.mumayi.com/cooperation/2015/04/02/60/608677/benpaobaxiongdi_woshicheshen_V2.4.0_mumayi_90d3e.apk"
+}, {
+	"channel": "000368",
+	"versions": ["2.2.0", "2.3.0"],
+	"update": "1",
+	"force_update": "0",
+	"update_url": "http://apk.wsdl.vivo.com.cn/appstore/developer/soft/201504/20150417171401754.apk"
+}, {
+	"channel": "000255",
+	"versions": ["2.2.0", "2.3.0"],
+	"update": "1",
+	"force_update": "0",
+	"update_url": "http://gproxy1.sm.cn/s/6/6/20150417172406e3489f_shen_Android_000255_uc_V2.5.0_VC15_V1_20150410.apk?cc=1722870589&vh=c9fb99b98e93fa9861c9d0a117115f07&sf=35836613"
+}, {
+	"channel": "000078",
+	"versions": ["2.2.0", "2.3.0"],
+	"update": "1",
+	"force_update": "0",
+	"update_url": "http://softfile.3g.qq.com/prism_webapp_pds/tac/2015041706501912714.apk"
+}, {
+	"channel": "000454",
+	"versions": ["2.2.0", "2.3.0"],
+	"update": "1",
+	"force_update": "0",
+	"update_url": "http://fapk.52fengyou.cn/newapk/0/40/4086_napk.apk"
 }]
