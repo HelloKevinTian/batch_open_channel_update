@@ -101,7 +101,7 @@ function process(item, keys, vals) {
 				result.update_url = item.update_url;
 				client.hset(redis_table, key, JSON.stringify(result), function(err) {
 					if (err) throw err;
-					console.log("update ok...");
+					console.log("update ok...  ",key);
 
 					count++;
 					callback();
@@ -119,7 +119,7 @@ function process(item, keys, vals) {
 						result.update_url = item.update_url;
 						client.hset(redis_table, key, JSON.stringify(result), function(err) {
 							if (err) throw err;
-							console.log("insert ok...");
+							console.log("insert ok...  ",key);
 
 							count++;
 							callback();
@@ -129,7 +129,7 @@ function process(item, keys, vals) {
 			}
 		},
 		function(err) {
-			console.log("over ...");
+			console.log("all over ...");
 		}
 	);
 }
