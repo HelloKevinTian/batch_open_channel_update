@@ -11,10 +11,7 @@ var client = redis.createClient("25040", "10.10.2.183", {
 
 var config = JSON.parse(fs.readFileSync('config.json', "utf8"));
 
-// console.log(config,typeof config);
-
 var redis_table = 'h_notice';
-
 
 client.on("error", function(err) {
 	console.log("Error " + err);
@@ -50,33 +47,6 @@ function run() {
 			console.log("all over...   ", err);
 		});
 	});
-
-
-	// hgetall();
-}
-
-function hgetall() {
-	client.hgetall(redis_table, function(err, reply) {
-		if (err) throw err;
-
-		if (reply != null) {
-			console.log(reply, typeof reply);
-		}
-	});
-	// client.hkeys(redis_table, function(err, reply) {
-	// 	if (err) throw err;
-
-	// 	if (reply != null) {
-	// 		console.log(reply, typeof reply);
-	// 	}
-	// });
-	// 	client.hvals(redis_table, function(err, reply) {
-	// 		if (err) throw err;
-
-	// 		if (reply != null) {
-	// 			console.log(reply, typeof reply);
-	// 		}
-	// 	});
 }
 
 function process(item, keys, vals) {
@@ -129,7 +99,7 @@ function process(item, keys, vals) {
 			}
 		},
 		function(err) {
-			console.log("all over ...");
+			console.log("one over ...");
 		}
 	);
 }
